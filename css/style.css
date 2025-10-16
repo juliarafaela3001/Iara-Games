@@ -69,7 +69,13 @@ header .container {
     transform: translateY(-50%);
     color: #aaa;
 }
-
+.search-bar .fa-microphone {
+    position:absolute;
+    right: 45px;
+    top: 50%;
+    transform: translateY(-50%);
+    color:#aaa;
+}
 .filters select {
     padding: 10px;
     border: 1px solid var(--border-color);

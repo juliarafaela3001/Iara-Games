@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --bg-color: #ffffff;
+    --text-color: #333333;
+    --card-bg: #f9f9f9;
+    --primary-color: #6a11cb;
+    --secondary-color: #2575fc;
+    --border-color: #e0e0e0;
+    --star-color: #ffc107;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: var(--primary-color);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="password"],
+select {
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    margin-bottom: 16px;
+}
+
+button[type="submit"] {
+    padding: 12px;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+button[type="submit"]:hover {
+    background-color: var(--secondary-color);
+}
+
+button[type="submit"]:active {
+   background-color: var(--secondary-color);
+  box-shadow: 0 5px var(--border-color);
+  transform: translateY(2px);
+  transition: all 0.1s ease-in-out;
+}
+.success-message {
+    text-align: center;
+    color: green;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.error-message {
+    text-align: center;
+    color: red;
+    font-weight: 600;
+    margin-top: 20px;
+}

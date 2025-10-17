@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/cadastro.css">
+    <title>Cadastro - Iara Games</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Cadastro de Usuário</h2>
+        <form action="#" method="post">
+            <label for="username"><span>*</span>Nome:</label>
+            <input type="text" id="username" name="username" required aria-required="true">
+
+            <label for="lastname"><span>*</span>Sobrenome:</label>
+            <input type="text" id="lastname" name="lastname" required aria-required="true">
+
+            <label for="birthdate"><span>*</span>Data de Nascimento:</label>
+            <input type="date" id="birthdate" name="birthdate" required aria-required="true">
+
+            <label for="gender"><span>*</span>Gênero:</label>
+            <select id="gender" name="gender" required aria-required="true">
+                <option value="masculino">Masculino</option>
+                <option value="feminino">Feminino</option>
+                <option value="outro">Outro</option>
+            </select>
+
+            <label for="email"><span>*</span>Email:</label>
+            <input type="email" id="email" name="email" required aria-required="true">
+
+            <label for="password"><span>*</span>Senha:</label>
+            <input type="password" id="password" name="password" required aria-required="true">
+
+            <button type="submit">Cadastrar</button>
+        </form>
+    </div>
+</body>
+</html>
